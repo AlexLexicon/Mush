@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Mush.Server.Api.Controllers;
 [ApiController]
-[Route("api/test")]
-public class TestController : LexicomController
+[Route("api/lobby")]
+public class LobbyController : LexicomController
 {
     [HttpGet]
     public IActionResult GetTest()
