@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>WinExe</OutputType>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lexicom.Concentrate.Client.Authentication.For.Wpf" Version="7.0.24" />
+    <PackageReference Include="Lexicom.Concentrate.Wpf.Amenities" Version="7.0.24" />
+    <PackageReference Include="Lexicom.Concentrate.Wpf.Controls" Version="7.0.24" />
+    <PackageReference Include="Lexicom.Concentrate.Wpf.Themes" Version="7.0.24" />
+    <PackageReference Include="Lexicom.Configuration.Settings.For.Wpf" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Mvvm.For.Wpf" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Validation.For.Wpf" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Wpf.Amenities" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Wpf.AttachedProperties" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Wpf.Controls" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Wpf.ValueConverters" Version="7.0.40" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Mush.Client.Wpf.ViewModels\Mush.Client.Wpf.ViewModels.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="Styles\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

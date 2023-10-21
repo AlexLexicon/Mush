@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lexicom.AspNetCore.Controllers.Contracts" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Concentrate.Client.Authentication" Version="7.0.24" />
+    <PackageReference Include="Lexicom.Extensions.Expressions" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Http" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Mvvm.Amenities" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Validation.Options" Version="7.0.40" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Handlers\" />
+    <Folder Include="Notifications\" />
+    <Folder Include="Responses\" />
+    <Folder Include="Requests\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mush.Server.Api.Contracts\Mush.Server.Api.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lexicom.AspNetCore.Controllers.Amenities" Version="7.0.40" />
+    <PackageReference Include="Lexicom.DependencyInjection.Primitives.For.AspNetCore.Controllers" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Logging.For.AspNetCore.Controllers" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Swashbuckle.For.AspNetCore.Controllers" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Validation.For.AspNetCore.Controllers" Version="7.0.40" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Validators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mush.Server.Api.Contracts\Mush.Server.Api.Contracts.csproj" />
+    <ProjectReference Include="..\Mush.Server.Application\Mush.Server.Application.csproj" />
+  </ItemGroup>
+
+</Project>

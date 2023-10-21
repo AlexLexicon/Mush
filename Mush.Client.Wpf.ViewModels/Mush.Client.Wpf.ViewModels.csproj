@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lexicom.Concentrate.Wpf.Amenities.Abstractions" Version="7.0.24" />
+    <PackageReference Include="Lexicom.Concentrate.Wpf.Themes.Abstractions" Version="7.0.24" />
+    <PackageReference Include="Lexicom.Configuration.Settings" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Extensions.Enums" Version="7.0.40" />
+    <PackageReference Include="Lexicom.Wpf.Amenities.Abstractions" Version="7.0.40" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mush.Client.Application\Mush.Client.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Handlers\" />
+    <Folder Include="Notifications\" />
+    <Folder Include="Responses\" />
+    <Folder Include="Requests\" />
+  </ItemGroup>
+
+</Project>

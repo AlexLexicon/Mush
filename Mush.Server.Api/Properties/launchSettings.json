@@ -1,0 +1,52 @@
+﻿{
+    "$schema": "https://json.schemastore.org/launchsettings.json",
+    "profiles":
+    {
+        "Mush.Server.Api.Http.Dev":
+        {
+            "commandName": "Project",
+            "dotnetRunMessages": true,
+            "launchBrowser": true,
+            "launchUrl": "swagger",
+            "applicationUrl": "http://localhost:5086",
+            "environmentVariables":
+            {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        "Mush.Server.Api.Http.Release":
+        {
+            "commandName": "Project",
+            "dotnetRunMessages": true,
+            "launchBrowser": true,
+            "launchUrl": "swagger",
+            "applicationUrl": "http://localhost:5086",
+            "environmentVariables":
+            {
+            }
+        },
+        "Mush.Server.Api.Https.Dev":
+        {
+            "commandName": "Project",
+            "dotnetRunMessages": true,
+            "launchBrowser": true,
+            "launchUrl": "swagger",
+            "applicationUrl": "https://localhost:7107;http://localhost:5086",
+            "environmentVariables":
+            {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        "Mush.Server.Api.Https.Release":
+        {
+            "commandName": "Project",
+            "dotnetRunMessages": true,
+            "launchBrowser": true,
+            "launchUrl": "swagger",
+            "applicationUrl": "https://localhost:7107;http://localhost:5086",
+            "environmentVariables":
+            {
+            }
+        }
+    }
+}
